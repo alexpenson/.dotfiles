@@ -1,0 +1,9 @@
+### README
+# various setup dot-files
+
+# To make these active, link them in $HOME:
+#cd
+#ln -s .dotfiles/.bash_profile 
+#ln -s .dotfiles/.screenrc
+#ln -s .dotfiles/.vimrc 
+
