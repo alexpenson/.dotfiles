@@ -7,3 +7,6 @@
 #ln -s .dotfiles/.screenrc
 #ln -s .dotfiles/.vimrc 
 
+# also, to make sure screen works, make sure .bashrc sources .bash_profile:
+#cat ~/.bashrc
+# source ~/.bash_profile
