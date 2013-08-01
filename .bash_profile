@@ -10,56 +10,58 @@
 
 INIT_DIR="${HOME}/.bash_prefs/bash_prefs" # the directory of the dirname
 
-# [[ "$-" != *i* ]] && return
+# this line, e.g.,  protects the functionality of rsync by only turning on the below if the shell is in interactive mode 
+# In particular, rsync fails if things are echo-ed to the terminal
+[[ "$-" != *i* ]] && return
 
 # bash welcome
-#if [ -e "${INIT_DIR}/local/bash_welcome_local" ]; then
-#  cat ${INIT_DIR}/local/bash_welcome_local
-#fi
+if [ -e "${INIT_DIR}/local/bash_welcome_local" ]; then
+   cat ${INIT_DIR}/local/bash_welcome_local
+fi
 
 #--------------------LOCAL------------------------------
 # aliases local
 if [ -e "${INIT_DIR}/local/bash_aliases_local" ]; then
   source "${INIT_DIR}/local/bash_aliases_local"
-# echo "bash_aliases_local loaded"
+  echo "bash_aliases_local loaded"
 fi
 
 # settings local
 if [ -e "${INIT_DIR}/local/bash_settings_local" ]; then
   source "${INIT_DIR}/local/bash_settings_local"
-# echo "bash_settings_local loaded"
+  echo "bash_settings_local loaded"
 fi
 
 # paths local
 if [ -e "${INIT_DIR}/local/bash_paths_local" ]; then
    source "${INIT_DIR}/local/bash_paths_local"
-#  echo "bash_paths_local loaded"
+   echo "bash_paths_local loaded"
 fi
 
 #---------------SHARE-----------------------------
 # aliases
 if [ -e "${INIT_DIR}/share/bash_aliases_share" ]; then
   source "${INIT_DIR}/share/bash_aliases_share"
-# echo "bash_aliases_share loaded"
+  echo "bash_aliases_share loaded"
 fi
 
 # settings share
 if [ -e "${INIT_DIR}/share/bash_settings_share" ]; then
   source "${INIT_DIR}/share/bash_settings_share"
-# echo "bash_settings_share loaded"
+  echo "bash_settings_share loaded"
 fi
 
 # functions share
 if [ -e "${INIT_DIR}/share/bash_functions_share" ]; then
    source "${INIT_DIR}/share/bash_functions_share"
- # echo "bash_functions_share loaded"
+   echo "bash_functions_share loaded"
 fi
 
 #---------------Initial Run-----------------------------
 if [ -e "${INIT_DIR}/local/bash_inirun_local" ]; then
-#  echo "-----------------------"
-#  echo "Running ini run - local"
+   echo "-----------------------"
+   echo "Running ini run - local"
    sh ${INIT_DIR}/local/bash_inirun_local
-#  echo "-----------------------"
+   echo "-----------------------"
 fi
 
