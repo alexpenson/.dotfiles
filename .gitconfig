@@ -1,0 +1,9 @@
+[http]
+	sslVerify = false
+[user]
+	email = oe2118@columbia.edu
+[push]
+	default = matching
+[color]
+	ui = auto
+
