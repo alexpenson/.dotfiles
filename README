@@ -1,7 +1,13 @@
 ### README
 # various setup dot-files
 
-# To make these active, link them in $HOME:
+# to get this repository, go into $HOME:
+#cd
+# and clone it:
+#git clone https://github.com/gitliver/.dotfiles.git
+# it will create a directory: .dotfiles/
+
+# To make it active, link the following dot files in $HOME:
 #cd
 #ln -s .dotfiles/.bash_profile 
 #ln -s .dotfiles/.screenrc
