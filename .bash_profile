@@ -3,12 +3,12 @@
 # 20130726
 
 # Do this first in your home:
-#mkdir -p .bash_prefs/bash_prefs/local
-#touch .bash_prefs/bash_prefs/local/{bash_aliases_local,bash_settings_local,bash_paths_local,bash_welcome_local,bash_inirun_local}
-#mkdir -p .bash_prefs/bash_prefs/share
-#touch .bash_prefs/bash_prefs/share/{bash_aliases_share,bash_settings_share,bash_functions_share}
+#mkdir -p .bash_prefs/local
+#touch .bash_prefs/local/{bash_aliases_local,bash_settings_local,bash_paths_local,bash_welcome_local,bash_inirun_local}
+#mkdir -p .bash_prefs/share
+#touch .bash_prefs/share/{bash_aliases_share,bash_settings_share,bash_functions_share}
 
-INIT_DIR="${HOME}/.bash_prefs/bash_prefs" # the directory of the dirname
+INIT_DIR="${HOME}/.bash_prefs" # the directory of the dirname
 
 # this line, e.g.,  protects the functionality of rsync by only turning on the below if the shell is in interactive mode 
 # In particular, rsync fails if things are echo-ed to the terminal
