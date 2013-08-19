@@ -1,6 +1,9 @@
 " number lines
 set nu
 
+" allow color highlighting
+syntax enable
+
 " good color scheme for white background
 colorscheme delek
 " colorscheme slate
