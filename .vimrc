@@ -22,6 +22,7 @@ set term=builtin_ansi
 " i.e., switch between paste-insert mode and ordinary insert-mode using \1
 set pastetoggle=<Leader>1
 
+" http://www.techrepublic.com/blog/linux-and-open-source/create-custom-keybindings-in-vim/
 " map CTRL-E to end-of-line (insert mode)
 inoremap <C-e> <esc>$i<right>
 " map CTRL-A to beginning-of-line (insert mode)
