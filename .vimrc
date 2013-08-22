@@ -27,3 +27,5 @@ set pastetoggle=<Leader>1
 inoremap <C-e> <esc>$i<right>
 " map CTRL-A to beginning-of-line (insert mode)
 inoremap <C-a> <esc>0i
+
+inoremap jj <esc>
