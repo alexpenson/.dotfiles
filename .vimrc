@@ -1,3 +1,8 @@
+" use plugins, such as tComment 
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 " number lines
 set nu
 
