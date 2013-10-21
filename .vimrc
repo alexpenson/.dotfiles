@@ -3,6 +3,14 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" set nerd tree key bindings
+nmap \e :NERDTreeToggle<CR>
+"Split navigation
+    nmap gh <C-w>h
+    nmap gj <C-w>j
+    nmap gk <C-w>k
+    nmap gl <C-w>l
+
 " number lines
 set nu
 

@@ -39,7 +39,7 @@ if [ -e "${INIT_DIR}/local/bash_paths_local" ]; then
 fi
 
 #---------------SHARE-----------------------------
-# aliases
+# aliases share
 if [ -e "${INIT_DIR}/share/bash_aliases_share" ]; then
   source "${INIT_DIR}/share/bash_aliases_share"
   echo "bash_aliases_share loaded"
