@@ -1,5 +1,5 @@
 # .bash_profile file, inspired by grepinsight :)
-# Oliver Elliott, oe2118@columbia.edu
+# gitliver
 # 20130726
 
 # Do this first in your home:
