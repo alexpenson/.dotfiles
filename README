@@ -2,7 +2,7 @@
 # various setup dot-files to optimize (stupid word!) your bash environment---vim, git, screen, etc.
 
 # to get this repository, go into $HOME:
-$ cd
+    cd
 # and clone it:
 $ git clone https://github.com/gitliver/.dotfiles.git
 # it will create an invisible directory: .dotfiles/
