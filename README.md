@@ -1,4 +1,4 @@
-# README
+# Dotfiles
 various setup dot-files to optimize (stupid word!) your bash environment---vim, git, screen, etc.
 
 to get this repository, go into $HOME:
